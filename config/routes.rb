@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resource :forecast, controller: 'forecasts', action: 'index'
+      resources :backgrounds, controller: 'backgrounds', action: 'index'
     end
   end
 end
