@@ -7,7 +7,7 @@ RSpec.describe CoordinatesFacade do
       coordinates = CoordinatesFacade.get_coordinates("Bozeman, MT")
 
       expect(coordinates).to be_a Coordinates
-      end 
+      end
     end
   end
 end
