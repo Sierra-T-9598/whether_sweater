@@ -14,9 +14,23 @@ RSpec.describe 'Book-Search API' do
       expect(book_search).to have_key :data
       expect(book_search[:data]).to have_key :id
       expect(book_search[:data]).to have_key :type
-      expect(book_search[:data][:type]).to eq("book_search")
+      expect(book_search[:data][:type]).to eq("books")
       expect(book_search[:data]).to have_key :attributes
       expect(book_search[:data][:attributes]).to be_a Hash
+
+      expect(book_search[:data][:attributes]).to have_key :destination
+      expect(book_search[:data][:attributes][:destination]).to be_a String
+
+      expect(book_search[:data][:attributes]).to have_key :forecast
+      expect(book_search[:data][:attributes][:forecast]).to be_a Hash
+      expect(book_search[:data][:attributes][:forecast].size).to eq(2)
+
+      expect(book_search[:data][:attributes]).to have_key :total_books_found
+      expect(book_search[:data][:attributes][:total_books_found]).to be_an Integer
+
+      expect(book_search[:data][:attributes]).to have_key :books
+      expect(book_search[:data][:attributes][:books]).to be_an Array
+      expect(book_search[:data][:attributes][:books].length).to eq(quantity)
     end
   end
 end
