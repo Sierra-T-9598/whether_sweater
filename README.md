@@ -48,7 +48,7 @@ Reference: [Turing documentation](https://backend.turing.edu/module3/projects/sw
 
 ### Set Up
 On your local system, open a terminal session to run the following commands:
-1. Clone this repository `$ git clone git@github.com:Your-user-name/whether_sweater.git`
+1. Clone this repository `$ git clone git@github.com:Sierra-T-9598/whether_sweater.git`
 2. Navigate to the newly cloned directory `$ cd whether_sweater`
 3. If bundler is not installed run `$ gem install bundler`
 4. If or after bundler is installed run `$ bundle install` to install the required Gems
