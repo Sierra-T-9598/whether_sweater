@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=<fake_uid>&location=Bozeman,MT
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=<fake_uid>&location=Bozeman,%20MT
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 07 Mar 2022 18:21:21 GMT
+      - Mon, 07 Mar 2022 18:21:07 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1037'
+      - '1036'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 07 Mar 2022 18:21:21 GMT
+      - Mon, 07 Mar 2022 18:21:06 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=16A65E303A8B782147AF827ABD2C20CE; Path=/; HttpOnly
+      - JSESSIONID=6DC09086F314493678B5BCBA0666CBB5; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -50,9 +50,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Bozeman,MT"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Bozeman","adminArea5Type":"City","adminArea4":"Gallatin
-        County","adminArea4Type":"County","adminArea3":"MT","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040164","unknownInput":"","type":"s","latLng":{"lat":45.679294,"lng":-111.046611},"displayLatLng":{"lat":45.679294,"lng":-111.046611},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<fake_uid>&type=map&size=225,160&locations=45.679294,-111.046611|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1754762585"}]}]}'
-  recorded_at: Mon, 07 Mar 2022 18:21:21 GMT
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Bozeman,
+        MT"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Bozeman","adminArea5Type":"City","adminArea4":"Gallatin
+        County","adminArea4Type":"County","adminArea3":"MT","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040164","unknownInput":"","type":"s","latLng":{"lat":45.679294,"lng":-111.046611},"displayLatLng":{"lat":45.679294,"lng":-111.046611},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<fake_uid>&type=map&size=225,160&locations=45.679294,-111.046611|marker-sm-50318A-1&scalebar=true&zoom=12&rand=951642282"}]}]}'
+  recorded_at: Mon, 07 Mar 2022 18:21:06 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=<fake_key>&exclude=minutely,alerts&lat=45.679294&lon=-111.046611&units=imperial
@@ -74,7 +75,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 07 Mar 2022 18:21:21 GMT
+      - Mon, 07 Mar 2022 18:21:07 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -91,7 +92,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":45.6793,"lon":-111.0466,"timezone":"America/Denver","timezone_offset":-25200,"current":{"dt":1646677269,"sunrise":1646661109,"sunset":1646702329,"temp":26.49,"feels_like":26.49,"pressure":1021,"humidity":54,"dew_point":13.68,"uvi":2.21,"clouds":100,"visibility":10000,"wind_speed":1.99,"wind_deg":20,"wind_gust":5.01,"weather":[{"id":804,"main":"Clouds","description":"overcast
+      string: '{"lat":45.6793,"lon":-111.0466,"timezone":"America/Denver","timezone_offset":-25200,"current":{"dt":1646677267,"sunrise":1646661109,"sunset":1646702329,"temp":26.49,"feels_like":26.49,"pressure":1021,"humidity":54,"dew_point":13.68,"uvi":2.21,"clouds":100,"visibility":10000,"wind_speed":1.99,"wind_deg":20,"wind_gust":5.01,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}]},"hourly":[{"dt":1646676000,"temp":26.49,"feels_like":22.23,"pressure":1021,"humidity":54,"dew_point":13.68,"uvi":2.21,"clouds":100,"visibility":10000,"wind_speed":3.6,"wind_deg":293,"wind_gust":5.23,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"pop":0},{"dt":1646679600,"temp":26.58,"feels_like":22.86,"pressure":1022,"humidity":55,"dew_point":14.13,"uvi":2.63,"clouds":100,"visibility":10000,"wind_speed":3.22,"wind_deg":296,"wind_gust":5.46,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"pop":0},{"dt":1646683200,"temp":27.28,"feels_like":23.31,"pressure":1023,"humidity":57,"dew_point":15.53,"uvi":2.6,"clouds":100,"visibility":10000,"wind_speed":3.47,"wind_deg":307,"wind_gust":5.37,"weather":[{"id":804,"main":"Clouds","description":"overcast
@@ -140,5 +141,5 @@ http_interactions:
         clouds","icon":"02d"}],"clouds":13,"pop":0,"uvi":2.76},{"dt":1647025200,"sunrise":1647006259,"sunset":1647048253,"moonrise":1647023280,"moonset":1646993760,"moon_phase":0.29,"temp":{"day":26.22,"min":14.9,"max":31.33,"night":27.81,"eve":31.33,"morn":14.9},"feels_like":{"day":26.22,"night":22.75,"eve":31.33,"morn":14.9},"pressure":1025,"humidity":92,"dew_point":21.27,"wind_speed":4.43,"wind_deg":156,"wind_gust":6.6,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":100,"pop":0.82,"snow":4.76,"uvi":2.54},{"dt":1647111600,"sunrise":1647092545,"sunset":1647134733,"moonrise":1647112860,"moonset":1647083220,"moon_phase":0.32,"temp":{"day":36.7,"min":31.1,"max":39.96,"night":32.02,"eve":38.17,"morn":35.26},"feels_like":{"day":32.47,"night":26.53,"eve":34.75,"morn":28.27},"pressure":1013,"humidity":93,"dew_point":32.38,"wind_speed":8.99,"wind_deg":258,"wind_gust":27.78,"weather":[{"id":600,"main":"Snow","description":"light
         snow","icon":"13d"}],"clouds":100,"pop":0.52,"snow":0.15,"uvi":3},{"dt":1647198000,"sunrise":1647178831,"sunset":1647221213,"moonrise":1647202920,"moonset":1647175860,"moon_phase":0.35,"temp":{"day":35.06,"min":30.67,"max":36.34,"night":33.84,"eve":35.71,"morn":30.67},"feels_like":{"day":30.09,"night":31.05,"eve":35.71,"morn":25.03},"pressure":1006,"humidity":94,"dew_point":30.9,"wind_speed":6.58,"wind_deg":136,"wind_gust":16.78,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":100,"pop":0.91,"snow":7.12,"uvi":3},{"dt":1647284400,"sunrise":1647265117,"sunset":1647307693,"moonrise":1647293340,"moonset":1647260760,"moon_phase":0.38,"temp":{"day":36.59,"min":25.95,"max":39.76,"night":32.31,"eve":38.98,"morn":25.95},"feels_like":{"day":36.59,"night":24.51,"eve":35.35,"morn":21.72},"pressure":1017,"humidity":84,"dew_point":29.55,"wind_speed":9.24,"wind_deg":154,"wind_gust":17.29,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"clouds":100,"pop":0.41,"uvi":3}]}'
-  recorded_at: Mon, 07 Mar 2022 18:21:21 GMT
+  recorded_at: Mon, 07 Mar 2022 18:21:07 GMT
 recorded_with: VCR 6.0.0

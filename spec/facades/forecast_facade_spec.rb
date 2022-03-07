@@ -23,6 +23,7 @@ RSpec.describe ForecastFacade do
     describe '::get_forecast_lite(location)' do
       it 'returns abbreviated current forecast data for use in the book-search request', :vcr do
         forecast_lite = ForecastFacade.get_forecast_lite('bozeman, MT')
+      
         expect(forecast_lite).to be_a Hash
         expect(forecast_lite.size).to eq(2)
         expect(forecast_lite).to have_key :summary
