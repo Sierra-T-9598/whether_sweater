@@ -44,4 +44,11 @@ class Forecast
       }
     end
   end
+
+  def forecast_lite
+    {
+      summary: @current_weather[:conditions],
+      temperature: @current_weather[:temperature].to_s + "F"
+    }
+  end
 end
