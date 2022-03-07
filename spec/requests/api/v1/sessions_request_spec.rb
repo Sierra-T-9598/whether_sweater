@@ -12,7 +12,7 @@ RSpec.describe 'Sessions API' do
         headers = {"CONTENT_TYPE" => "application/json"}
         post "/api/v1/sessions", headers: headers, params: JSON.generate(session_params)
         found_user = JSON.parse(response.body, symbolize_names: true)
-        
+
         expect(response.status).to eq(200)
         expect(found_user).to have_key(:data)
         expect(found_user[:data]).to have_key(:attributes)
