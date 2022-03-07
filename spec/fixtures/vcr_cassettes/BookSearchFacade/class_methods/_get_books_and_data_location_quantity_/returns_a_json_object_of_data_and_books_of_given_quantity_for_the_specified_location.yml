@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 07 Mar 2022 18:35:16 GMT
+      - Mon, 07 Mar 2022 18:35:07 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1033'
+      - '1032'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 07 Mar 2022 18:35:16 GMT
+      - Mon, 07 Mar 2022 18:35:07 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=61B654E67A71BF748EBBC8DBB4F5FBA7; Path=/; HttpOnly
+      - JSESSIONID=41113F9DE89DD49B2CB522FF737CEB12; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,8 +51,8 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"bozeman"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Bozeman","adminArea5Type":"City","adminArea4":"Gallatin
-        County","adminArea4Type":"County","adminArea3":"MT","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040164","unknownInput":"","type":"s","latLng":{"lat":45.679294,"lng":-111.046611},"displayLatLng":{"lat":45.679294,"lng":-111.046611},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<fake_uid>&type=map&size=225,160&locations=45.679294,-111.046611|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-523850132"}]}]}'
-  recorded_at: Mon, 07 Mar 2022 18:35:16 GMT
+        County","adminArea4Type":"County","adminArea3":"MT","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040164","unknownInput":"","type":"s","latLng":{"lat":45.679294,"lng":-111.046611},"displayLatLng":{"lat":45.679294,"lng":-111.046611},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<fake_uid>&type=map&size=225,160&locations=45.679294,-111.046611|marker-sm-50318A-1&scalebar=true&zoom=12&rand=677530877"}]}]}'
+  recorded_at: Mon, 07 Mar 2022 18:35:07 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=<fake_key>&exclude=minutely,alerts&lat=45.679294&lon=-111.046611&units=imperial
@@ -74,7 +74,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 07 Mar 2022 18:35:16 GMT
+      - Mon, 07 Mar 2022 18:35:08 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -140,7 +140,7 @@ http_interactions:
         clouds","icon":"02d"}],"clouds":13,"pop":0,"uvi":2.76},{"dt":1647025200,"sunrise":1647006259,"sunset":1647048253,"moonrise":1647023280,"moonset":1646993760,"moon_phase":0.29,"temp":{"day":26.22,"min":14.9,"max":31.33,"night":27.81,"eve":31.33,"morn":14.9},"feels_like":{"day":26.22,"night":22.75,"eve":31.33,"morn":14.9},"pressure":1025,"humidity":92,"dew_point":21.27,"wind_speed":4.43,"wind_deg":156,"wind_gust":6.6,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":100,"pop":0.82,"snow":4.76,"uvi":2.54},{"dt":1647111600,"sunrise":1647092545,"sunset":1647134733,"moonrise":1647112860,"moonset":1647083220,"moon_phase":0.32,"temp":{"day":36.7,"min":31.1,"max":39.96,"night":32.02,"eve":38.17,"morn":35.26},"feels_like":{"day":32.47,"night":26.53,"eve":34.75,"morn":28.27},"pressure":1013,"humidity":93,"dew_point":32.38,"wind_speed":8.99,"wind_deg":258,"wind_gust":27.78,"weather":[{"id":600,"main":"Snow","description":"light
         snow","icon":"13d"}],"clouds":100,"pop":0.52,"snow":0.15,"uvi":3},{"dt":1647198000,"sunrise":1647178831,"sunset":1647221213,"moonrise":1647202920,"moonset":1647175860,"moon_phase":0.35,"temp":{"day":35.06,"min":30.67,"max":36.34,"night":33.84,"eve":35.71,"morn":30.67},"feels_like":{"day":30.09,"night":31.05,"eve":35.71,"morn":25.03},"pressure":1006,"humidity":94,"dew_point":30.9,"wind_speed":6.58,"wind_deg":136,"wind_gust":16.78,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":100,"pop":0.91,"snow":7.12,"uvi":3},{"dt":1647284400,"sunrise":1647265117,"sunset":1647307693,"moonrise":1647293340,"moonset":1647260760,"moon_phase":0.38,"temp":{"day":36.59,"min":25.95,"max":39.76,"night":32.31,"eve":38.98,"morn":25.95},"feels_like":{"day":36.59,"night":24.51,"eve":35.35,"morn":21.72},"pressure":1017,"humidity":84,"dew_point":29.55,"wind_speed":9.24,"wind_deg":154,"wind_gust":17.29,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"clouds":100,"pop":0.41,"uvi":3}]}'
-  recorded_at: Mon, 07 Mar 2022 18:35:16 GMT
+  recorded_at: Mon, 07 Mar 2022 18:35:08 GMT
 - request:
     method: get
     uri: http://openlibrary.org/search.json?place=bozeman
@@ -162,7 +162,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Mon, 07 Mar 2022 18:35:16 GMT
+      - Mon, 07 Mar 2022 18:35:08 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -176,7 +176,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"SR 1 0.118 TT 0 0.145"'
+      - '"SR 1 0.508 TT 0 0.523"'
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
@@ -8359,7 +8359,7 @@ http_interactions:
             "q": "",
             "offset": null
         }
-  recorded_at: Mon, 07 Mar 2022 18:35:17 GMT
+  recorded_at: Mon, 07 Mar 2022 18:35:10 GMT
 - request:
     method: get
     uri: http://openlibrary.org/search.json?place=bozeman
@@ -8381,7 +8381,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Mon, 07 Mar 2022 18:35:17 GMT
+      - Mon, 07 Mar 2022 18:35:10 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -8395,7 +8395,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"SR 1 0.135 TT 0 0.156"'
+      - '"SR 1 0.137 TT 0 0.173"'
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
@@ -16578,5 +16578,5 @@ http_interactions:
             "q": "",
             "offset": null
         }
-  recorded_at: Mon, 07 Mar 2022 18:35:18 GMT
+  recorded_at: Mon, 07 Mar 2022 18:35:10 GMT
 recorded_with: VCR 6.0.0
