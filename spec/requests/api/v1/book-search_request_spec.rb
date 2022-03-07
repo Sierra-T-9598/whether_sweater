@@ -35,7 +35,7 @@ RSpec.describe 'Book-Search API' do
       end
     end
 
-    describe 'sad path' do
+    describe 'sad paths' do
       it 'returns status 400 if the quantity specified is less than 1', :vcr do
         location = 'bozeman'
         quantity = -1
@@ -46,6 +46,18 @@ RSpec.describe 'Book-Search API' do
         expect(response.status).to eq(400)
         expect(none).to have_key :error
         expect(none[:error]).to eq('Quantity must be greater than 0')
+      end
+
+      it 'returns status 400 if the location brings back no results', :vcr do
+        location = 'akjdfhaeu'
+        quantity = 1
+        get "/api/v1/book-search?location=#{location}&quantity=#{quantity}"
+
+        none = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response.status).to eq(400)
+        expect(none).to have_key :error
+        expect(none[:error]).to eq("It looks like there are no matches for the location you gave, please try again")
       end
     end
   end
