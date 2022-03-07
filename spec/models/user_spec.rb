@@ -5,8 +5,8 @@ RSpec.describe User, type: :model do
     it { should have_secure_password }
     it { should validate_presence_of(:email) }
     it { should validate_uniqueness_of(:email).case_insensitive }
-    # it { should validate_presence_of(:private_api_key).allow_blank }
-    # it { should validate_uniqueness_of(:private_api_key).allow_blank }
+    it { should validate_presence_of(:private_api_key).on(:set_private_api_key) }
+    it { should validate_uniqueness_of(:private_api_key).on(:set_private_api_key) }
   end
 
   describe 'test of password validations' do

@@ -9,8 +9,8 @@ class User < ApplicationRecord
   blind_index :private_api_key, key: ENV["blind_index_master_key"]
   before_create :set_private_api_key
 
-  validates_presence_of :private_api_key, allow_blank: true
-  validates_uniqueness_of :private_api_key, allow_blank: true
+  validates_presence_of :private_api_key, on: :set_private_api_key
+  validates_uniqueness_of :private_api_key, on: :set_private_api_key
 
   private
 
