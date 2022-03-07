@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resource :forecast, controller: 'forecasts', action: 'index'
       resources :backgrounds, controller: 'backgrounds', action: 'index'
       resources :users, only: [:create]
+      resources :sessions, only: [:create]
     end
   end
 end
