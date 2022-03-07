@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Mon, 07 Mar 2022 18:06:22 GMT
+      - Mon, 07 Mar 2022 18:12:57 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1010'
+      - '1011'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Mon, 07 Mar 2022 18:06:22 GMT
+      - Mon, 07 Mar 2022 18:12:57 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=E8B4153DBCC99675A7DC6C5E4CD540DA; Path=/; HttpOnly
+      - JSESSIONID=41488BE973C6727DA409E0D437D03765; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -50,11 +50,11 @@ http_interactions:
       encoding: UTF-8
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"akjdfhaeu"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A1XAX","geocodeQuality":"COUNTRY","dragPoint":false,"sideOfStreet":"N","linkId":"282934758","unknownInput":"","type":"s","latLng":{"lat":39.390897,"lng":-99.066067},"displayLatLng":{"lat":39.390897,"lng":-99.066067},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<fake_uid>&type=map&size=225,160&locations=39.390897,-99.066067|marker-sm-50318A-1&scalebar=true&zoom=2&rand=-882227087"}]}]}'
-  recorded_at: Mon, 07 Mar 2022 18:06:22 GMT
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"akjdfhaeu"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A1XAX","geocodeQuality":"COUNTRY","dragPoint":false,"sideOfStreet":"N","linkId":"282934758","unknownInput":"","type":"s","latLng":{"lat":39.390897,"lng":-99.066067},"displayLatLng":{"lat":39.390897,"lng":-99.066067},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<fake_uid>&type=map&size=225,160&locations=39.390897,-99.066067|marker-sm-50318A-1&scalebar=true&zoom=2&rand=-2146065612"}]}]}'
+  recorded_at: Mon, 07 Mar 2022 18:12:57 GMT
 - request:
     method: get
-    uri: https://api.openweathermap.org/data/2.5/onecall?appid=39f5d3452669ed671bf7332d97638087&exclude=minutely,alerts&lat=39.390897&lon=-99.066067&units=imperial
+    uri: https://api.openweathermap.org/data/2.5/onecall?appid=<fake_key>&exclude=minutely,alerts&lat=39.390897&lon=-99.066067&units=imperial
     body:
       encoding: US-ASCII
       string: ''
@@ -73,7 +73,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 07 Mar 2022 18:06:23 GMT
+      - Mon, 07 Mar 2022 18:12:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -90,7 +90,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":39.3909,"lon":-99.0661,"timezone":"America/Chicago","timezone_offset":-21600,"current":{"dt":1646676383,"sunrise":1646658011,"sunset":1646699677,"temp":30.29,"feels_like":20.61,"pressure":1030,"humidity":41,"dew_point":11.68,"uvi":3.91,"clouds":6,"visibility":10000,"wind_speed":12.06,"wind_deg":330,"wind_gust":14.41,"weather":[{"id":800,"main":"Clear","description":"clear
+      string: '{"lat":39.3909,"lon":-99.0661,"timezone":"America/Chicago","timezone_offset":-21600,"current":{"dt":1646676778,"sunrise":1646658011,"sunset":1646699677,"temp":30.29,"feels_like":20.61,"pressure":1030,"humidity":41,"dew_point":11.68,"uvi":3.91,"clouds":6,"visibility":10000,"wind_speed":12.06,"wind_deg":330,"wind_gust":14.41,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}]},"hourly":[{"dt":1646676000,"temp":30.29,"feels_like":20.61,"pressure":1030,"humidity":41,"dew_point":11.68,"uvi":3.91,"clouds":6,"visibility":10000,"wind_speed":12.06,"wind_deg":330,"wind_gust":14.41,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1646679600,"temp":31.37,"feels_like":22.51,"pressure":1030,"humidity":40,"dew_point":12.18,"uvi":3.95,"clouds":6,"visibility":10000,"wind_speed":10.87,"wind_deg":328,"wind_gust":12.86,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"pop":0},{"dt":1646683200,"temp":33.33,"feels_like":25.38,"pressure":1029,"humidity":37,"dew_point":12.27,"uvi":3.35,"clouds":6,"visibility":10000,"wind_speed":10,"wind_deg":325,"wind_gust":11.68,"weather":[{"id":800,"main":"Clear","description":"clear
@@ -146,7 +146,7 @@ http_interactions:
         clouds","icon":"03d"}],"clouds":41,"pop":0,"uvi":5},{"dt":1647194400,"sunrise":1647175849,"sunset":1647218446,"moonrise":1647201420,"moonset":1647171420,"moon_phase":0.35,"temp":{"day":43.63,"min":23.63,"max":54.09,"night":42.46,"eve":49.59,"morn":23.63},"feels_like":{"day":43.63,"night":37.71,"eve":46.76,"morn":18.27},"pressure":1009,"humidity":81,"dew_point":37.96,"wind_speed":7.76,"wind_deg":67,"wind_gust":11.9,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"clouds":89,"pop":0,"uvi":5},{"dt":1647280800,"sunrise":1647262154,"sunset":1647304906,"moonrise":1647291540,"moonset":1647256560,"moon_phase":0.38,"temp":{"day":41.54,"min":39.31,"max":49.05,"night":39.31,"eve":48.06,"morn":44.35},"feels_like":{"day":31.5,"night":34.77,"eve":42.71,"morn":36.55},"pressure":1016,"humidity":70,"dew_point":32.36,"wind_speed":24.72,"wind_deg":352,"wind_gust":38.18,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"clouds":100,"pop":0.1,"uvi":5}]}'
-  recorded_at: Mon, 07 Mar 2022 18:06:23 GMT
+  recorded_at: Mon, 07 Mar 2022 18:12:58 GMT
 - request:
     method: get
     uri: http://openlibrary.org/search.json?place=akjdfhaeu
@@ -168,7 +168,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Mon, 07 Mar 2022 18:06:23 GMT
+      - Mon, 07 Mar 2022 18:12:58 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -182,7 +182,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"SR 1 0.093 TT 0 0.094"'
+      - '"SR 1 0.117 TT 0 0.119"'
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
@@ -197,7 +197,7 @@ http_interactions:
             "q": "",
             "offset": null
         }
-  recorded_at: Mon, 07 Mar 2022 18:06:23 GMT
+  recorded_at: Mon, 07 Mar 2022 18:12:58 GMT
 - request:
     method: get
     uri: http://openlibrary.org/search.json?place=akjdfhaeu
@@ -219,7 +219,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Mon, 07 Mar 2022 18:06:23 GMT
+      - Mon, 07 Mar 2022 18:12:59 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -233,7 +233,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"SR 1 0.111 TT 0 0.112"'
+      - '"SR 1 0.099 TT 0 0.100"'
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
@@ -248,5 +248,5 @@ http_interactions:
             "q": "",
             "offset": null
         }
-  recorded_at: Mon, 07 Mar 2022 18:06:23 GMT
+  recorded_at: Mon, 07 Mar 2022 18:12:59 GMT
 recorded_with: VCR 6.0.0
