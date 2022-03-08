@@ -47,7 +47,7 @@ Reference: [Turing documentation](https://backend.turing.edu/module3/projects/sw
 
 ## Project Description
 
-This is a back-end project designed to explore the fundamentals of a service-orietned architecture and exposing and API that aggregates data from multiple external APIs in order to meet the specifications and requirements of a theroretical front-end team. Whether, Sweater? will ultimately help users plan road trips by providing current weather data and forecasted weather data at the desired destination. Functionality is achieved by consuming [MapQuest's Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/), the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api), [MapQuest's Directions API](https://developer.mapquest.com/documentation/directions-api/), and the [Unplash API](https://unsplash.com/developers) to provide tasteful background images for the front-end views. Users are also stored in the backend database and built out as part of the exposed endpoints to ensure secure registration and login functions. This API also provides and requires an API Key for users to access road trip information. 
+This is a back-end project designed to explore the fundamentals of a service-orietned architecture and exposing and API that aggregates data from multiple external APIs in order to meet the specifications and requirements of a theroretical front-end team. Whether, Sweater? will ultimately help users plan road trips by providing current weather data and forecasted weather data at the desired destination. Functionality is achieved by consuming [MapQuest's Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/),  the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api),  [MapQuest's Directions API](https://developer.mapquest.com/documentation/directions-api/),  and the  [Unplash API](https://unsplash.com/developers) to provide tasteful background images for the fictitious front-end views. Users are also stored in the backend database and built out as part of the exposed endpoints to ensure secure registration and login functions. This API also provides and requires an API Key for users to access road trip information. 
 
 ## Learning Goals for Project:
 
@@ -80,7 +80,7 @@ Implicit
 ![Shoulda Matchers][Shoulda Matchers-img]
 ![Simplecov][Simplecov-img]
 ![VCR][VCR-img]
-![Circle CI][Cieclw CI-img]
+![Circle CI][Circle CI-img]
 
 - API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers), [figaro](https://medium.com/@MinimalGhost/the-figaro-gem-an-easier-way-to-securely-configure-rails-applications-c6f963b7e993)
 
@@ -89,7 +89,17 @@ Implicit
 ----------
 
 ## Database Schema
-
+```
+create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "password_digest"
+    t.string "private_api_key_ciphertext"
+    t.string "private_api_key_bidx"
+    t.index ["private_api_key_bidx"], name: "index_users_on_private_api_key_bidx", unique: true
+  end
+```
 ----------
 
 ## Getting Started
@@ -395,7 +405,8 @@ Trip Response:
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
+[LinkedIn](https://www.linkedin.com/in/sierra-tucker-a254201a8/)
+  
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
 <!-- #### Development -->
 [Atom-img]: https://img.shields.io/badge/Atom-66595C.svg?&style=flaste&logo=atom&logoColor=white
