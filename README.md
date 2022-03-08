@@ -144,7 +144,7 @@ On your command line:
 ## API
 Available endpoints
 
-POSTMAN BUTTON
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/99ba3fb57c77a60e7249?action=collection%2Fimport)
 
 ### Forecast endpoint
 
