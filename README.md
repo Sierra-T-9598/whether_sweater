@@ -80,7 +80,6 @@ Implicit
 ![Shoulda Matchers][Shoulda Matchers-img]
 ![Simplecov][Simplecov-img]
 ![VCR][VCR-img]
-![Circle CI][Circle CI-img]
 
 - API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers), [figaro](https://medium.com/@MinimalGhost/the-figaro-gem-an-easier-way-to-securely-configure-rails-applications-c6f963b7e993)
 
