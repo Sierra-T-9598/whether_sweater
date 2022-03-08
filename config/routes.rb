@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :backgrounds, controller: 'backgrounds', action: 'index'
       resources :users, only: [:create]
       resources :sessions, only: [:create]
+      resource :road_trip, controller: 'road_trips', action: 'create'
     end
   end
 end
