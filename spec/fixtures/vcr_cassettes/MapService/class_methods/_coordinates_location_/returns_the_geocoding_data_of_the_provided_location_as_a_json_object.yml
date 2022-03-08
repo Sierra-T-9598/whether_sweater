@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=<fake_uid>&location=Bozeman,MT
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=<fake_map_key>&location=Bozeman,MT
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Sun, 06 Mar 2022 04:14:29 GMT
+      - Tue, 08 Mar 2022 17:59:57 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1035'
+      - '1036'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Sun, 06 Mar 2022 04:14:29 GMT
+      - Tue, 08 Mar 2022 17:59:57 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=E343B4989451755FACB76C7416015886; Path=/; HttpOnly
+      - JSESSIONID=8D602E2A52E0B029F2F80D3E74DFC260; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -51,6 +51,6 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Bozeman,MT"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Bozeman","adminArea5Type":"City","adminArea4":"Gallatin
-        County","adminArea4Type":"County","adminArea3":"MT","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040164","unknownInput":"","type":"s","latLng":{"lat":45.679294,"lng":-111.046611},"displayLatLng":{"lat":45.679294,"lng":-111.046611},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<fake_uid>&type=map&size=225,160&locations=45.679294,-111.046611|marker-sm-50318A-1&scalebar=true&zoom=12&rand=919538805"}]}]}'
-  recorded_at: Sun, 06 Mar 2022 04:14:29 GMT
+        County","adminArea4Type":"County","adminArea3":"MT","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040164","unknownInput":"","type":"s","latLng":{"lat":45.679294,"lng":-111.046611},"displayLatLng":{"lat":45.679294,"lng":-111.046611},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<fake_map_key>&type=map&size=225,160&locations=45.679294,-111.046611|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1656880002"}]}]}'
+  recorded_at: Tue, 08 Mar 2022 17:59:57 GMT
 recorded_with: VCR 6.0.0
