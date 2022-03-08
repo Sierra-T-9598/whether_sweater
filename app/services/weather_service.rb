@@ -1,6 +1,8 @@
 class WeatherService
   def self.forecast_data(lat, lng, units = 'imperial')
-    get_data("2.5/onecall?lat=#{lat}&lon=#{lng}&exclude=minutely,alerts&units=#{units}")
+    Rails.cache.fetch('forecast_data', expires_in: 1.hour) do
+      get_data("2.5/onecall?lat=#{lat}&lon=#{lng}&exclude=minutely,alerts&units=#{units}")
+    end
   end
 
   private
