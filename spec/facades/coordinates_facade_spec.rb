@@ -8,6 +8,16 @@ RSpec.describe CoordinatesFacade do
 
       expect(coordinates).to be_an_instance_of(Coordinates)
       end
+
+      it 'returns only lat-lng' do
+        coordinates = CoordinatesFacade.get_coordinates("Bozeman, MT")
+
+        expect(coordinates.lat).to_not eq(nil)
+        expect(coordinates.lat).to be_a Float
+        
+        expect(coordinates.lng).to_not eq(nil)
+        expect(coordinates.lng).to be_a Float
+      end
     end
   end
 end
