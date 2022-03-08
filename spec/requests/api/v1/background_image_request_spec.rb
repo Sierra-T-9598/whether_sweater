@@ -47,7 +47,7 @@ RSpec.describe 'Background Image API' do
         expect(response.status).to eq(400)
 
         expect(no_image).to have_key :error
-        expect(no_image[:error]).to eq("Missing location")
+        expect(no_image[:error]).to eq("Missing location.")
       end
     end
   end
