@@ -7,11 +7,14 @@ RSpec.describe Forecast do
             daily: [{dt: 1646506800, sunrise: 1646488531, sunset: 1646529365, temp: {min: 18.28, max: 26.53}, weather: [{description: "snow", icon: "13d"}]}]
           }
     forecast = Forecast.new(data)
-    
+
     expect(forecast.current_weather).to be_a Hash
     expect(forecast.hourly_weather).to be_an Array
     expect(forecast.hourly_weather.length).to eq(1)
     expect(forecast.daily_weather).to be_an Array
     expect(forecast.daily_weather.length).to eq(1)
+    # if test data for hourly weather had more than 8 elements,
+    #this method would return all hourly weather data for the location
+    expect(forecast.hourly_weather_full.length).to eq(1)
   end
 end
