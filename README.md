@@ -48,14 +48,14 @@ Reference: [Turing documentation](https://backend.turing.edu/module3/projects/sw
 
 ### Set Up
 On your local system, open a terminal session to run the following commands:
-1. Clone this repository `$ git clone git@github.com:Book-Club-Project/book_club_BE.git`
-2. Navigate to the newly cloned directory `$ cd book_club_BE`
+1. Clone this repository `$ git clone git@github.com:Sierra-T-9598/whether_sweater.git`
+2. Navigate to the newly cloned directory `$ cd whether_sweater`
 3. If bundler is not installed run `$ gem install bundler`
 4. If or after bundler is installed run `$ bundle install` to install the required Gems
 5. If errors occur, check for proper installation and versions of `bundler`, `ruby`, and `rails`
 6. Set up the database locally with `$ rails db:{:drop,:create,:migrate,:seed}`
 7. Open your text editor and check to see that `schema.rb` exists
-8. You may also run the RSpec test suite locally with the command `$ bundle exec rspec` to ensure everything is functioning as expected.
+8. Run the RSpec test suite locally with the command `$ bundle exec rspec` to ensure everything is functioning as expected.
 
 ### Use of this Repository
 
@@ -64,7 +64,7 @@ On your local system, open a terminal session to run the following commands:
 On your command line:
 1. Navigate to the local directory where the backend repo is housed
 2. Run `$ rails s` to run the server locally
-3. Open a web browser and navigate to http://localhost:3000/
+3. Open a web browser and navigate to http://localhost:3000/ 
 4. Here you are able to explore the endpoints exposed by the API!
 
 ----------
@@ -102,7 +102,7 @@ Implicit
 
 - API: [jsonapi-serializer](https://github.com/fotinakis/jsonapi-serializers), [figaro](https://medium.com/@MinimalGhost/the-figaro-gem-an-easier-way-to-securely-configure-rails-applications-c6f963b7e993)
 
-- User Authentication and Security: [bcrypt](https://github.com/bcrypt-ruby/bcrypt-ruby)
+- User Authentication and Security: [bcrypt](https://github.com/bcrypt-ruby/bcrypt-ruby), [Lockbox](https://github.com/ankane/lockbox), [blind_index](https://github.com/ankane/blind_index)
 
 ----------
 
