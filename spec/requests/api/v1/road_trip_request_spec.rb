@@ -28,7 +28,7 @@ RSpec.describe "Road Trip API" do
         expect(created_road_trip[:data][:attributes].size).to eq(4)
 
         expect(created_road_trip[:data][:attributes]).to_not have_key :private_api_key
-        
+
         expect(created_road_trip[:data][:attributes]).to have_key :start_city
         expect(created_road_trip[:data][:attributes][:start_city]).to eq(road_trip_params[:origin])
 
@@ -43,7 +43,7 @@ RSpec.describe "Road Trip API" do
         expect(created_road_trip[:data][:attributes][:weather_at_eta].size).to eq(2)
 
         expect(created_road_trip[:data][:attributes][:weather_at_eta]).to have_key :temperature
-        expect(created_road_trip[:data][:attributes][:weather_at_eta][:temperature]).to be_an Integer
+        expect(created_road_trip[:data][:attributes][:weather_at_eta][:temperature]).to be_a Float
 
         expect(created_road_trip[:data][:attributes][:weather_at_eta]).to have_key :conditions
         expect(created_road_trip[:data][:attributes][:weather_at_eta][:conditions]).to be_a String
