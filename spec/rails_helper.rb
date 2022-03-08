@@ -81,4 +81,5 @@ VCR.configure do |config|
   config.filter_sensitive_data('<fake_uid>') { ENV['map_quest_api_key'] }
   # config.filter_sensitive_data('<fake_token>') { ENV['quote_token'] }
   config.configure_rspec_metadata!
+  config.allow_http_connections_when_no_cassette = true
 end
