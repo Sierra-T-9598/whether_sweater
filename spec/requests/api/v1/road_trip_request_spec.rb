@@ -43,7 +43,7 @@ RSpec.describe "Road Trip API" do
         expect(created_road_trip[:data][:attributes][:weather_at_eta].size).to eq(2)
 
         expect(created_road_trip[:data][:attributes][:weather_at_eta]).to have_key :temperature
-        expect(created_road_trip[:data][:attributes][:weather_at_eta][:temperature]).to be_a Float
+        expect(created_road_trip[:data][:attributes][:weather_at_eta][:temperature]).to_not eq(nil)
 
         expect(created_road_trip[:data][:attributes][:weather_at_eta]).to have_key :conditions
         expect(created_road_trip[:data][:attributes][:weather_at_eta][:conditions]).to be_a String
